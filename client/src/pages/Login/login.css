@@ -1,0 +1,129 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper {
+    width: 60%;
+    height: 75%;
+    -webkit-box-shadow: 14px 7px 32px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 7px 32px -3px rgba(0,0,0,0.75);
+    box-shadow: 14px 7px 32px -3px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+        width: 65%;
+        height: 90%;
+        flex-direction: column;
+    }
+}
+
+.login-title {
+    position: absolute;
+    top: 135px;
+    color: lightgrey;
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+        padding:20px
+    }
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.or {
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    padding: 10px;
+    color: rgb(128, 128, 128);
+    background-color: white;
+    font-weight: bold;
+}
+
+.line {
+    width: 1px;
+    height: 50%;
+    background-color: lightgray;
+    position: absolute;
+
+    /*to be under the circle*/
+    z-index: -1;
+
+    @media screen and (max-width: 992px) {
+        height: 1px;
+        width: 300px;
+    }
+}
+
+.login-btn {
+    width: 150px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.google {
+    background-color: #df4930;
+}
+
+.facebook {
+    background-color: #507cc0;
+}
+
+.github {
+    background-color: black;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+input {
+    width: 200px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.submit {
+    width: 130px;
+    height: 35px;
+    background-color: darkgreen;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
